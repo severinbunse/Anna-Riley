@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'ITC Cheltenham Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Cheltenham Std Book'), url('fonts/itc-cheltenham-std-webfont/CheltenhamStdBook.woff') format('woff');
+}
+
+
  body {
         margin: 0;
         overflow-x: hidden;
@@ -16,7 +24,6 @@
     }
 
     img {
-        width: 90%;
         max-width: 500px;
         height: auto; /* Maintains aspect ratio */
     }
@@ -26,11 +33,11 @@
     }
 
     a {
-        color: red;
+        color: black;
     }
 
     .text {
-        font-family: Georgia;
+        font-family: 'ITC Cheltenham Std Book', Georgia, serif;
         font-size: 24px;
         width: 500px;
         text-align: center;
@@ -46,6 +53,12 @@
 
     .text {
         font-size: 16;
+    }
+
+    img {
+        width: 90%;
+        max-width: 500px;
+        height: auto; /* Maintains aspect ratio */
     }
 
 }
