@@ -5,6 +5,13 @@
     src: local('ITC Cheltenham Std Book'), url('fonts/itc-cheltenham-std-webfont/CheltenhamStdBook.woff') format('woff');
 }
 
+   @font-face {
+    font-family: 'ITC Cheltenham Std Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Cheltenham Std Light'), url('CheltenhamStdLight.woff') format('woff');
+    }
+
 html {
         overflow-x: hidden;
     }
@@ -17,7 +24,7 @@ html {
 .container {
     scroll-behavior: smooth;
     overflow: auto;
-    height: 100vh; /* or any height you want */
+    height: 100vh;
     scroll-snap-type: y mandatory;
 }
 
@@ -29,8 +36,8 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
-    gap: 0px;
+    width: 100%;
+    gap: 20px;
     scroll-snap-align: start; /* Or center, end */
 }
 
@@ -70,6 +77,10 @@ html {
         color: black;
     }
 
+    .redtext {
+        color: red;
+    }
+
 
     .text {
         font-family: 'ITC Cheltenham Std Book', Georgia, serif;
@@ -80,6 +91,16 @@ html {
         list-style-type: none;
     }
 
+    .QAtext {
+        width: 1000px;
+        font-family: 'ITC Cheltenham Std Book', Georgia, serif;
+        font-size: 22px;
+        list-style-type: none;
+        column-count: 2;
+        column-gap: 50px;
+        text-align: center;
+    }
+
     #header {
         
         display: flex;
@@ -87,7 +108,7 @@ html {
         flex-wrap: wrap;
         gap: 1em;
         width: 1000px;
-        height: 50px;
+        height: 30px;
         position: fixed;
         bottom: 0px;
         z-index: 10;
@@ -108,7 +129,7 @@ html {
         color: red;
     }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1099px) {
 
     html {
         overflow-x: hidden;
@@ -117,6 +138,7 @@ html {
     }
 
     .container {
+        padding: 20px;
         height: auto;
     }
 
@@ -128,15 +150,13 @@ html {
     }
 
     #header a {
-
         font-size: 18px;
     }
 
     .section {
         padding-top: 50px;
-        padding-bottom: 50px;
+        
         height: auto;
-        border-bottom: 1.5px solid black;
     }
 
     .text {
@@ -150,11 +170,15 @@ html {
         height: auto;
     }
 
-    .map-container {
-    width: 90%;
-    max-width: 500px;
-    height: 300px;
-}
+    .QAtext {
+        font-size: 18px;
+        column-count: 1;
+        width: 80%;
+        padding: 0;
+    }
 
+    #form {
+        height: 800px;
+    }
 
 }
