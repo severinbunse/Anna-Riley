@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'ITC Cheltenham Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Cheltenham Std Book'), url('fonts/itc-cheltenham-std-webfont/CheltenhamStdBook.woff') format('woff');
+}
+
+   @font-face {
+    font-family: 'ITC Cheltenham Std Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Cheltenham Std Light'), url('CheltenhamStdLight.woff') format('woff');
+    }
+
 html {
         overflow-x: hidden;
         scroll-behavior: smooth;
@@ -7,77 +21,130 @@ html {
 body {
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
+    position: relative;
 }
 
-    .container {
-        -webkit-overflow-scrolling: touch;
-        scroll-behavior: smooth;
-        width: 100%;
-        height: 100vh;
-        scroll-snap-type: y mandatory;]
-        background: red;
-        padding: 10px;
-    }
+* {
+    font-family: 'ITC Cheltenham Std Book', Georgia, serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
 
-    #header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 60px;
-        z-index: 100;
-        row-gap: 0em;
-        padding: 10px;      
-    }
+.container {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    background: red;
+    padding: 10px;
+}
 
-    #header a {
-        font-size: 18px;
-    }
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: white;
+    border-bottom: 1.5px solid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 0.5em;
+    padding: 10px 5px 10px 5px;
+      
+}
 
-    .section {
-        width: 100%;
-        min-height: 100vh;
-        height: auto;
-        scroll-snap-align: start;
-        align-items: start;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1em;
-        
-    }
+#menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: white;
+    border-bottom: 1.5px solid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 5px 10px 5px;
+}
 
-    #accomodations {
-        align-items: center;
-    }
+#menu a {
+    color: lightgrey;
+}
+
+#menu a:hover {
+    color: red;
+}
+
+#header a {
+    font-size: 18px;
+    color: lightgrey;
+}
+
+#header a:hover {
+    color: red;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    scroll-snap-align: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#accomodations {
+    align-items: center;
+}
 
 
-    .text {
-        font-size: 18px;
-        padding: 0px;
-        background: yellowgreen;
-        width: 100%;
-    }
+.text {
+    padding: 0px;
+    background: yellowgreen;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.redtext {
+    color: red;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    background: yellow;
+}
 
 
-    img {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        background: yellow;
-    }
+iframe {
+    width: 100%;
+    height: calc(100vh - 500px);
+}
 
-    iframe {
-        width: 100%;
-        height: 100vh;
-    }
+
+a {
+    color: black;
+}
 
 
 .map-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 400px);
 }
+
 
 .map-iframe {
     width: 100%;
@@ -89,12 +156,11 @@ body {
     display: none;
 }
 
-    .QAtext {
-        font-size: 18px;
+.QAtext {
         column-count: 1;
         width: 100%;
         padding: 0;
-    }
+}
 
  #form {
         height: 100vh;
