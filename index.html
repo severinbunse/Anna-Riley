@@ -6,11 +6,12 @@
     <title>Anna & Riley</title>
     <link rel="icon" type="image/png" href="images/Favicon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 1099px)">
 
 </head>
 <body>
 
-    <div id="header">
+    <nav id="header">
         <div><a href="#liberty">Home</a></div>
         <div><a href="#accomodations">Accomodations</a></div>
         <div><a href="#schedule">Schedule</a></div>
@@ -20,7 +21,7 @@
         <div><a href="#directions">Directions</a></div>
         <div><a href="#QA" >FAQs</a></div>
         <div><a href="#radio" >Radio</a></div>
-    </div>
+    </nav>
 
     <div class="container"> 
 
@@ -58,12 +59,14 @@
                 We have reserved rooms at two hotels in     Downtown Brooklyn:
                 <br>
                 <br>
-                <a class="redtext" href="https://maps.app.goo.gl/uZQbwEs8roU3RPwa9">Ace Hotel Brooklyn</a><br>
+                <span class="redtext">Ace Hotel Brooklyn</span><br>
+                <a href="https://maps.app.goo.gl/uZQbwEs8roU3RPwa9">252 Schermerhorn St, Brooklyn, NY 11217</a><br>
                 Reserve through the group booking link
                 Group code: GOSC0725
                 <br>
                 <br>
-                <a class="redtext" href="">Holiday Inn Brooklyn Downtown</a><br>
+                <span class="redtext">Holiday Inn Brooklyn Downtown</span><br>
+                <a href="https://maps.app.goo.gl/TKRtgPnzsRLjv4ju8">300 Schermerhorn St, Brooklyn, NY 11217</a><br>
                 Reserve through the group booking link
                 Group code: 
             </ul>
@@ -249,7 +252,7 @@
 
         <div id="radio" class="section">
 
-            <iframe id="form" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4rNunnolqLnN?utm_source=generator"width="500px" height="80%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4rNunnolqLnN?utm_source=generator"width="500px" height="80%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
         </div>   
 
@@ -258,16 +261,16 @@
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var overlay = document.getElementById('overlay');
+        document.addEventListener('DOMContentLoaded', function() {
+            var overlay = document.getElementById('overlay');
 
-        // Allow the user to click on the overlay to disable it and allow zooming
-        overlay.addEventListener('click', function() {
-            overlay.style.display = 'none'; // Hide the overlay (and enable zooming)
+            overlay.addEventListener('click', function() {
+                overlay.style.display = 'none'; // Hide the overlay
+            });
         });
-    });
 
 </script>
+
 
 
 </body>
