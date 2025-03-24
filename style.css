@@ -14,6 +14,8 @@
 
 
 * {
+    font-family: 'ITC Cheltenham Std Book', Georgia, serif;
+    font-size: 22px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,6 +36,9 @@ body {
     color: red;
 }    
 
+#menu {
+    display: none;
+}
 
 .container {
     width: 100%;
@@ -53,7 +58,7 @@ body {
     height: 100vh;
     width: 100%;
     gap: 20px;
-    scroll-snap-align: start; /* Or center, end */
+    scroll-snap-align: start;
 }
 
 img {
@@ -102,8 +107,6 @@ img {
 
 
     .text {
-        font-family: 'ITC Cheltenham Std Book', Georgia, serif;
-        font-size: 22px;
         width: 500px;
         text-align: center;
         padding: 40px;
@@ -112,8 +115,6 @@ img {
 
     .QAtext {
         width: 1000px;
-        font-family: 'ITC Cheltenham Std Book', Georgia, serif;
-        font-size: 22px;
         list-style-type: none;
         column-count: 2;
         column-gap: 50px;
@@ -139,8 +140,6 @@ img {
     #header a {
         text-decoration: none;
         color: lightgrey;
-        font-family: 'ITC Cheltenham Std Book', Georgia, serif;
-        font-size: 22px;
     }
 
     #header a:hover {
