@@ -106,7 +106,7 @@ body {
 
 img {
     margin-top: 10px;
-    width: 80%;
+    width: 100%;
     max-width: 500px;
     height: auto;
 }
@@ -153,10 +153,16 @@ a {
 
 }
 
- #form {
+#form {
         height: 100vh;
 }
 
 #spotify {
     height: 400px;
 }
+
+#liberty {
+    background: yellow;
+    padding-bottom: 50vh;
+}
+
