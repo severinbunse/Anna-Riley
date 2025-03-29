@@ -156,10 +156,6 @@ a {
 
 }
 
-#form {
-        height: 100dvh;
-}
-
 #liberty {
     padding-bottom: 50dvh;
     align-items: center;
@@ -198,4 +194,14 @@ a {
 
 #spotify {
     height: calc(100dvh - 200px);
+}
+
+#RSVP {
+    padding-top: 10px;
+    padding-bottom: 50dvh;
+    justify-content: start;
+}
+
+#RSVP_form {
+        height: 800px;
 }
