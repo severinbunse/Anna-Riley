@@ -186,6 +186,16 @@ a {
     justify-content: start; 
 }
 
+#directionsmap {
+    height: calc( 100dvh - 500px);
+    border-radius: 10px;
+}
+
+.map-iframe {
+    border-radius: 10px;
+    height: 350px;
+}
+
 #radio {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -193,7 +203,8 @@ a {
 }
 
 #spotify {
-    height: calc(100dvh - 200px);
+    height: 3000px;
+
 }
 
 #RSVP {
