@@ -1,218 +1,307 @@
-@font-face {
-    font-family: 'ITC Cheltenham Std Book';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ITC Cheltenham Std Book'), url('fonts/itc-cheltenham-std-webfont/CheltenhamStdBook.woff') format('woff');
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=portrait">
+    <title>Anna & Riley</title>
+    <link rel="icon" type="image/png" href="images/Favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen and (min-width: 1099px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 1099px)">
 
-   @font-face {
-    font-family: 'ITC Cheltenham Std Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ITC Cheltenham Std Light'), url('CheltenhamStdLight.woff') format('woff');
-    }
+</head>
+<body>
 
-html {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-}
+    <nav id="header">
+        <div><a href="#liberty">Home</a></div>
+        <div><a href="#accomodations">Hotels</a></div>
+        <div><a href="#schedule">Schedule</a></div>
+        <div><a href="#registry">Registry</a></div>
+        <div><a href="#RSVP">RSVP</a></div>
+        <div><a href="#recommendations">Guide</a></div>
+        <div><a href="#directions">Directions</a></div>
+        <div><a href="#QA" >FAQs</a></div>
+        <div><a href="#radio" >Radio</a></div>
+    </nav>
 
-body {
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-    position: relative;
-}
+    <div class="container"> 
 
-* {
-    font-family: 'ITC Cheltenham Std Book', Georgia, serif;
-    font-size: 18px;
-    line-height: auto;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}   
+        <div id="liberty" class="section">
+            
+            <img src="images/liberty.png">
+    
+            <div class="text">
+                Together with their families <br>
+                <br>
+                ANNA SCHLOSSER<br>
+                &<br>
+                RILEY GOLD<br>
+                <br>
+                invite you to their wedding on<br>
+                Saturday, the twenty-sixth of July<br>
+                at half after four o’clock<br>
+                <br>
+                <a href="https://maps.app.goo.gl/Kn8MW1roWnBdeHKb8" style="text-decoration: none;">Pioneer Works<br>
+                159 Pioneer St, Brooklyn, NY 11231<br></a>
+                <br>
+                Dinner and dancing to follow.<br>
+                Cocktail attire.<br>
+                <br>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEsmT41SJ2QGfKhSunVqEZ2ZBCXxZ6faeRNhRIcFHSQJsBlw/viewform?usp=dialog" style="Color: red;">Click here to RSVP</a><br>
+            </div>
+    
+        </div>
 
-.container {
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    width: 100%;
-    height: calc(100dvh - 72px);
-    scroll-snap-type: y mandatory;
-    overflow: auto;
-    padding: 10px;
-}
+        <div id="accomodations" class="section">
 
-#header {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 72px;
-    z-index: 100;
-    background: white;
-/*    border-bottom: 1.5px solid;*/
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5em;
-    padding: 10px 10px 10px 10px;
-    border-top: 1.2px solid lightgrey;
-}
+            <ul class="text">
+                <span class="greytext">ACCOMODATIONS</span><br>
+                <br>
+                We have reserved rooms at two hotels in     Downtown Brooklyn:
+                <br>
+                <br>
+                <span class="redtext">Ace Hotel Brooklyn</span><br>
+                <a href="https://maps.app.goo.gl/uZQbwEs8roU3RPwa9">252 Schermerhorn St, Brooklyn, NY 11217</a><br>
+                Reserve through the group booking link
+                Group code: GOSC0725
+                <br>
+                <br>
+                <span class="redtext">Holiday Inn Brooklyn Downtown</span><br>
+                <a href="https://maps.app.goo.gl/TKRtgPnzsRLjv4ju8">300 Schermerhorn St, Brooklyn, NY 11217</a><br>
+                Reserve through the group booking link
+                Group code: 
+            </ul>
 
+        </div>   
 
-#header a {
-    font-size: 18px;
-    color: lightgrey;
-    text-decoration: none;
-}
+        <div id="schedule" class="section">
 
-#header a:hover {
-    color: red;
-}
+            <ul class="text">
 
-.section {
-    width: 100%;
-    min-height: 100%;
-    height: auto;
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-}
+                <span class="greytext">SCHEDULE</span>
+                <br>
+                <br>
 
-#accomodations {
-    align-items: center;
-}
+                <span class="redtext">Friday</span>
 
+                <li>7pm-10pm
+                Name of place
+                Address
+                Brooklyn, NY
+                Dress: Casual</li>
+                <br>
 
-.text {
-/*    background: yellowgreen;*/
-    width: 100%;
-    text-align: center;
-    list-style-type: none;
-}
+                <span class="redtext">Saturday</span>
+                
+                <li>Ceremony + Reception<br>
+                4:30pm-12am at <a href="https://maps.app.goo.gl/Kn8MW1roWnBdeHKb8">Pioneer Works,</a><br>
+                159 Pioneer St, Brooklyn, NY 11231<br>
+                Dress: Cocktail Attire</li>
+                <br>
 
-.redtext {
-    color: red;
-}
+                <span class="redtext">Afterparty</span>
 
-.greytext {
-    color: lightgrey;
-}
+                <li>Brooklyn Ice House,<br>
+                318 Van Brunt St, Brooklyn, NY 11231</li>
+                <br>
 
-img {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
-
-
-iframe {
-    width: 100%;
-}
-
-
-a {
-    color: black;
-}
-
-
-
-
-.map-container {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 400px);
-}
-
-
-.map-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.overlay {
-    display: none;
-}
-
-#overlay {
-    display: none;
-}
-
-.QAtext {
-        column-count: 1;
-        width: 100%;
-        padding: 0;
-        list-style-type: none;
-        text-align: center;
-        padding-bottom: 50dvh;
-}        
+                <span class="redtext">Sunday</span>
+                
+                <li>Bagels in the park at 11am(?)-1pm,
+                Fort Greene Park (or, Prospect Park?)<br>
+                Dress: Casual</li>
  
+            </ul>
 
-}
+        </div>
 
-#liberty {
-    padding-bottom: 50dvh;
-    align-items: center;
-    justify-content: start;
-}
+        <div id="registry" class="section">
 
-#directions {
-    padding-top: 10px;
-    padding-bottom: 50dvh;
-    justify-content: start;
-}
+            <div class="text" style="width: auto;">
 
-#recommendations {
-    padding-top: 10px;
-    padding-bottom: 50dvh;
-    justify-content: start;
-}
+            <span class="greytext">REGISTRY</span>
+            <br>
+            <br>
+            To access our wedding registries, please follow these links to <a class="redtext" href="https://heathceramics.myshopify.com/apps/registry/anna-and-rileys-wedding?shared_url=true">Heath</a> and <a class="redtext" href="https://www.zola.com/registry/annaandrileyjuly26">Zola</a>.
+         
+            
+            </div>
 
-#QA {
-    padding-top: 10px;
-    padding-bottom: 25dvh; 
-    justify-content: start;
-}
+        </div> 
 
-#directions {
-    padding-top: 10px;
-    padding-bottom: 50dvh;
-    justify-content: start; 
-}
+        <div id="RSVP" class="section">
+           
+           <iframe id="RSVP_form" src="https://docs.google.com/forms/d/e/1FAIpQLScon16AjuHsWNbDB6O53BGwvtk9VbZhg3ubz1_X4FOqpWjoUg/viewform" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-#directionsmap {
-    height: calc( 100dvh - 500px);
-    border-radius: 10px;
-}
+       </div>
 
-.map-iframe {
-    border-radius: 10px;
-    height: 350px;
-}
+        <div id="recommendations" class="section">
+    
+            <ul class="text">
+                <span class="greytext">NYC Guide</span><br>
+                <br>
 
-#radio {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: start; 
-}
+                <li class="redtext">Russian & Turkish Baths</li>
+                <li>The Russian & Turkish Baths are run on alternate weeks by the two owners, Boris Tuberman and David Shapiro. There are differences between the 'Boris weeks' and 'David weeks' in that the 'David weeks' have digital swipe passes for admission while the 'Boris weeks' are more old-school.<br>
+                <a href="https://maps.app.goo.gl/sCyXbip7WE8breyU8">268 E 10th St, New York, NY 10009</a></li>
 
-#spotify {
-    height: 3000px;
+                <br>
+                <br>
 
-}
+                <li class="redtext">Russian & Turkish Baths</li>
+                <li>The Russian & Turkish Baths are run on alternate weeks by the two owners, Boris Tuberman and David Shapiro. There are differences between the 'Boris weeks' and 'David weeks' in that the 'David weeks' have digital swipe passes for admission while the 'Boris weeks' are more old-school.<br>
+                <a href="https://maps.app.goo.gl/sCyXbip7WE8breyU8">268 E 10th St, New York, NY 10009</a></li>
 
-#RSVP {
-    padding-top: 10px;
-    padding-bottom: 50dvh;
-    justify-content: start;
-}
+                <br>
+                <br>
 
-#RSVP_form {
-        height: 800px;
-}
+                <li class="redtext">Russian & Turkish Baths</li>
+                <li>The Russian & Turkish Baths are run on alternate weeks by the two owners, Boris Tuberman and David Shapiro. There are differences between the 'Boris weeks' and 'David weeks' in that the 'David weeks' have digital swipe passes for admission while the 'Boris weeks' are more old-school.<br>
+                <a href="https://maps.app.goo.gl/sCyXbip7WE8breyU8">268 E 10th St, New York, NY 10009</a></li>         
+
+                <br>
+                <br>
+
+                <li class="redtext">Russian & Turkish Baths</li>
+                <li>The Russian & Turkish Baths are run on alternate weeks by the two owners, Boris Tuberman and David Shapiro. There are differences between the 'Boris weeks' and 'David weeks' in that the 'David weeks' have digital swipe passes for admission while the 'Boris weeks' are more old-school.<br>
+                <a href="https://maps.app.goo.gl/sCyXbip7WE8breyU8">268 E 10th St, New York, NY 10009</a></li>
+
+                <br>
+       
+            </ul>
+                
+        <div class="map-container">
+            <iframe class="map-iframe" src="https://www.google.com/maps/d/u/2/embed?mid=1f1lAfTfqe-3yFLIVQtC_VKRZ5j75E7g&ehbc=2E312F" width="500" height="500"></iframe>
+            <!-- Overlay that is always visible initially -->
+            
+            <div class="overlay" id="overlay"></div>
+
+                 <ul class="text">
+                    <li>
+                        <br>
+                        Please follow <a class="redtext" href="https://www.google.com/maps/d/u/2/embed?mid=1f1lAfTfqe-3yFLIVQtC_VKRZ5j75E7g&ehbc=2E312F">this link</a> to access our complete Guide on Google Maps.</li>
+                </ul>
+
+            </div>
+         </div>
+
+
+        <div id="directions" class="section">
+        
+            <ul class="text">
+                <span class="greytext">DIRECTIONS</span><br>
+                <br>
+                <li><span class="redtext">Address:</span><br>
+                <a href="">159 Pioneer Street, Brooklyn, NY 11231</a></li>
+                <br>
+                <li><span class="redtext">Subway:<br>
+                </span> F or G train (Smith-9th St Station)<br><br>
+
+                <span class="redtext">Bus:</span><br>
+                B61 (King St stop)</li>
+                <br>
+                <li><span class="redtext">Ferry:</span><br>
+                South Brooklyn (SBK) Ferry to Red Hook/Atlantic Basin (Red Hook stop)<br>
+                <br>
+                <span class="redtext">Other options:</span><br>
+                Taxi or personal car
+                </li>
+            
+            </ul>
+            
+            <iframe id="directionsmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.7601996738103!2d-74.01472892383795!3d40.67925233961948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a8a1e8232e1%3A0x7f1e484e285acf79!2s159%20Pioneer%20St%2C%20Brooklyn%2C%20NY%2011231!5e0!3m2!1sen!2sus!4v1741803181560!5m2!1sen!2sus" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+        <div id="QA" class="section">
+            
+            <ul class="QAtext">
+
+                <span class="greytext">FREQUENTLY ASKED QUESTIONS</span>
+
+                <br>
+                <br>
+
+                <li class="redtext">What date should I RSVP by?</li>
+                <li>We invite you to RSVP online <a href="">here</a> before June 1st please!</li>
+
+                <br>
+
+                <li class="redtext">What are the addresses of the wedding ceremony and reception venues?</li>
+                <li>Both, the wedding ceremony and reception will take place at <a href="https://maps.app.goo.gl/Kn8MW1roWnBdeHKb8">Pioneer Works, 159 Pioneer St, Brooklyn, NY 11231.</a></li>
+
+                <br>
+
+                <li class="redtext">Will the wedding be outdoors?</li>
+                <li>We will have an outdoor ceremony and indoor reception. In the event of rain, the ceremony will be moved indoors.</li>
+           
+                <br>
+
+                <li class="redtext">What is the easiest way to get to and from your wedding venue(s)?</li>
+                <li>Please refer to <a href="#directions">the directions section</a> for the easiest way to get from and to the wedding location.<br>
+                </li>
+
+                <br>
+
+                <li class="redtext">Have you reserved blocks of rooms at one or more hotels?</li>
+                <li>We have reserved rooms at two hotels in Downtown Brooklyn. Please refer to <a href="#accommodations">the accomodation section</a> for more information.</li>
+
+                <br>
+
+                <li class="redtext">What is the dress code for your wedding?</li>
+                <li>Our wedding dress code is cocktail attire, so feel free to dress elegantly in a suit or cocktail dress.</li>
+
+                <br>
+
+                <li class="redtext">Should I wear a yarmulke?</li>
+                <li>You are welcome to but it is not required. </li>
+
+                <br>
+
+                <li class="redtext">Are plus-ones and children allowed?</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt.</li>
+
+                <br>
+
+                <li class="redtext">Where are you registered for wedding gifts?</li>
+                <li>For information about wedding gifts, please refer to <a href="#registry">the registry section.</a></li>
+
+                <br>
+
+                <li class="redtext">What is the wedding day itinerary?</li>
+                <li>For a complete overview of the day's events, please refer to <a href="#schedule">the schedule section.</a></li>
+
+            </ul>
+    
+     
+       </div>
+
+        <div id="radio" class="section">
+
+            <div class="text">Please follow <a class="redtext" href="https://open.spotify.com/embed/playlist/37i9dQZF1E4rNunnolqLnN?utm_source=generator">this link</a> to a Spotify playlist of Songs Riley burned on CDs for Anna in the 2010s (curated by Anna).</div>
+
+            <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4rNunnolqLnN?utm_source=generator"width="500px" height="" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        </div>   
+
+
+    </div>
+
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var overlay = document.getElementById('overlay');
+
+            overlay.addEventListener('click', function() {
+                overlay.style.display = 'none'; // Hide the overlay
+            });
+        });
+
+</script>
+
+
+
+</body>
+</html>
