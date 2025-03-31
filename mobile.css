@@ -73,7 +73,7 @@ body {
 
 .section {
     width: 100%;
-    min-height: 100%;
+    min-height: calc(100dvh - 72px);
     height: auto;
     scroll-snap-align: start;
     display: flex;
@@ -81,6 +81,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1em;
+    border-top: 1.2px solid lightgrey;
 }
 
 #accomodations {
@@ -89,7 +90,6 @@ body {
 
 
 .text {
-/*    background: yellowgreen;*/
     width: 100%;
     text-align: center;
     list-style-type: none;
@@ -152,9 +152,6 @@ a {
         text-align: center;
         padding-bottom: 50dvh;
 }        
- 
-
-}
 
 #liberty {
     padding-bottom: 50dvh;
@@ -187,7 +184,7 @@ a {
 }
 
 #directionsmap {
-    height: calc( 100dvh - 500px);
+    height: 500px;
     border-radius: 10px;
 }
 
