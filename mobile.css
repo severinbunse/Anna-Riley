@@ -42,6 +42,7 @@ body {
     height: calc(100dvh - 72px);
     scroll-snap-type: y mandatory;
     overflow: auto;
+    overscroll-behavior: contain;
 }
 
 #header {
