@@ -14,15 +14,15 @@
 <body>
 
     <nav id="header">
-        <div><a href="#liberty">Home</a></div>
-        <div><a href="#accomodations">Hotels</a></div>
-        <div><a href="#schedule">Schedule</a></div>
-        <div><a href="#registry">Registry</a></div>
-        <div><a href="#RSVP">RSVP</a></div>
-        <div><a href="#recommendations">Guide</a></div>
-        <div><a href="#directions">Directions</a></div>
-        <div><a href="#QA" >FAQs</a></div>
-        <div><a href="#radio" >Radio</a></div>
+        <div><a class="menu-link" href="#liberty">Home</a></div>
+        <div><a class="menu-link" href="#accomodations">Hotels</a></div>
+        <div><a class="menu-link" href="#schedule">Schedule</a></div>
+        <div><a class="menu-link" href="#registry">Registry</a></div>
+        <div><a class="menu-link" href="#RSVP">RSVP</a></div>
+        <div><a class="menu-link" href="#recommendations">Guide</a></div>
+        <div><a class="menu-link" href="#directions">Directions</a></div>
+        <div><a class="menu-link" href="#QA" >FAQs</a></div>
+        <div><a class="menu-link" href="#radio" >Radio</a></div>
     </nav>
 
     <div class="container"> 
@@ -299,7 +299,33 @@
             });
         });
 
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll(".section");
+    const menuLinks = document.querySelectorAll(".menu-link");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const link = document.querySelector(`.menu-link[href="#${entry.target.id}"]`);
+            
+            if (entry.isIntersecting) {
+                // Add active class when section is in view
+                menuLinks.forEach(link => link.classList.remove("active"));
+                link.classList.add("active");
+            } else {
+                // Remove active class when section is out of view
+                link.classList.remove("active");
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+});
+
+
 </script>
+
 
 
 
