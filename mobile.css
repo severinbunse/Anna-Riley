@@ -160,25 +160,25 @@ a {
 }
 
 #directions {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 50dvh;
     justify-content: start;
 }
 
 #recommendations {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 50dvh;
     justify-content: start;
 }
 
 #QA {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 25dvh; 
     justify-content: start;
 }
 
 #directions {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 50dvh;
     justify-content: start; 
 }
@@ -194,7 +194,7 @@ a {
 }
 
 #radio {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
     justify-content: start; 
 }
@@ -205,7 +205,7 @@ a {
 }
 
 #RSVP {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 50dvh;
     justify-content: start;
 }
