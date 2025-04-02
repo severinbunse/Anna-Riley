@@ -128,7 +128,6 @@ img {
         background: none;
         column-gap: 1em;
         padding: 10px;
-        background: white;
         border-top: 1.2px solid lightgrey;
     }
 
@@ -143,18 +142,6 @@ img {
 
     #header a:hover {
     
-    }
-
-    #RSVP {
-        height: auto;
-        padding-bottom: 50dvh;
-        justify-content: start;
-        flex-direction: column;
-    }
-
-    #RSVP_form {
-        width: 100%;
-        height: 2500px;
     }
 
     #recommendations {
@@ -188,4 +175,5 @@ img {
 
     #spotify {
         height: 500px;
+        width: ;
     }
