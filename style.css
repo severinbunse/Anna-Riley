@@ -150,16 +150,17 @@ img {
      color: red;
     }
 
-    #recommendations {
+/*    #recommendations {
         height: auto;
         padding-bottom: 50dvh;
         justify-content: start;
         flex-direction: column;
-    }
+    }*/
 
-    #recommendations .text {
+
+/*    #recommendations .text {
         width: 1000px;
-    }
+    }*/
 
     #QA {
         height: auto;
