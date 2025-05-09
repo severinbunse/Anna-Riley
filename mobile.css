@@ -24,6 +24,7 @@ body {
     overflow-x: hidden;
     position: relative;
     overscroll-behavior: contain;
+    background-color: white;
 }
 
 * {
@@ -36,7 +37,7 @@ body {
 }   
 
 .smalltext {
-    color: lightgrey;
+    color: red;
 }
 
 .container {
@@ -62,13 +63,13 @@ body {
     flex-wrap: wrap;
     gap: 0.5em;
     padding: 10px 10px 10px 10px;
-    border-top: 1.2px solid lightgrey;
+    border-top: 1.2px solid #B8B8B8;
 }
 
 
 #header a {
     font-size: 18px;
-    color: lightgrey;
+    color: #B8B8B8;
     text-decoration: none;
 }
 
@@ -88,7 +89,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    border-top: 1.2px solid lightgrey;
+    border-top: 1.2px solid #B8B8B8;
     padding: 10px;
 }
 
@@ -108,7 +109,7 @@ body {
 }
 
 .greytext {
-    color: lightgrey;
+    color: #B8B8B8;
 }
 
 img {
