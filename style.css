@@ -177,6 +177,12 @@ img {
         text-align: center;
     }
 
+    .longtext {
+        width: 600px;
+        list-style-type: none;
+        text-align: center;
+    }
+
     #radio {
 
     }
