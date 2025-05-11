@@ -160,7 +160,16 @@ a {
         list-style-type: none;
         text-align: center;
         padding-bottom: 50dvh;
-}        
+}
+
+.longtext {
+        column-count: 1;
+        width: 100%;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        padding-bottom: 50dvh;
+}
 
 #liberty {
     padding-bottom: 50dvh;
