@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'ITC Cheltenham Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Cheltenham Std Book'), url('fonts/itc-cheltenham-std-webfont/CheltenhamStdBook.woff') format('woff');
+}
+
+   @font-face {
+    font-family: 'ITC Cheltenham Std Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Cheltenham Std Light'), url('CheltenhamStdLight.woff') format('woff');
+    }
+
+
+* {
+    font-family: 'ITC Cheltenham Std Book', Georgia, serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+html {
+        overflow-x: hidden;
+    }
+
+body {
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        position: relative;
+        background-color: white;
+    }
+
+#header a:active {
+    color: red;
+}    
+
+#menu {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow: auto;
+    height: calc(100dvh - 47.5px);
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100dvh - 47.5px);
+    width: 100%;
+    gap: 0px;
+    scroll-snap-align: start;
+    border-top: 1.2px solid #9C9C9C;
+}
+
+img {
+    max-width: 450px;
+    height: auto; /* Maintains aspect ratio */
+}
+
+.map-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 10;
+    display: block; 
+    cursor: pointer; 
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+
+    a {
+        color: black;
+    }
+
+    .redtext {
+        color: red;
+    }
+
+    .greytext {
+        color: #9C9C9C;
+    }
+
+
+    .text {
+        width: 500px;
+        text-align: center;
+        padding: 40px;
+        list-style-type: none;
+    }
+
+    .smalltext {
+        color: #9C9C9C;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 47.5px;
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+        left: 50%; /* Move the header to the middle of the viewport */
+        transform: translateX(-50%);
+        background: none;
+        column-gap: 1em;
+        padding: 10px;
+        border-top: 1.2px solid #9C9C9C;
+    }
+
+    #header a {
+        text-decoration: none;
+        color: #9C9C9C;
+    }
+
+    #header a.active {
+    color: red;
+    }
+
+    #header a:hover {
+     color: red;
+    }
+
+    #QA {
+        height: auto;
+        padding-bottom: 50dvh;
+        justify-content: start;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    #directions {
+        height: auto;
+        padding-bottom: 50dvh;
+        justify-content: start;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    #recommendations {
+        height: auto;
+        padding-bottom: 50dvh;
+        justify-content: start;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .QAtext {
+        width: 600px;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .longtext {
+        width: 600px;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #radio {
+
+    }
+
+    #spotify {
+        height: 500px;
+        width: ;
+    }
+
+    @media only screen and (orientation: portrait) {
+    
+    #spotify {
+        height: 700px;
+        width: 500px;
+    }
+
+    #liberty {
+        height: auto;
+        padding-bottom: 50dvh;
+        justify-content: start;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    #radio {
+        height: auto;
+        padding-bottom: 50dvh;
+        justify-content: start;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    img {
+        max-width: 450px;
+    }
+
+}
